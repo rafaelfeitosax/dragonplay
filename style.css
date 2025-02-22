@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif; /* lembrar de mudar depois outra fonte mais dbz*/
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(img/background\ dbz.gif) no-repeat center center fixed; 
+    background-size: cover; /*isso aqui legal gostei da pra substituir o width full */
+}
+
+.player { /* sao cores que o homem indicou mas futuramente mudar para cor voltada pra dbz */
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.cover img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: green;
+}
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;  /* Estudar mais um pouco flexbox apanhei aqui*/
+}
+
+#progress-bar {
+    width: 100%;
+}
+
+#cover {
+    width: 100%; /* Faz a imagem ocupar toda a largura do player */
+    max-width: 300px; /* Define um tamanho máximo */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaços extras abaixo da imagem */
+    margin: 0 auto; /* Centraliza a imagem */
+    border-radius: 10px; /* Deixa as bordas arredondadas (opcional) */
+}
+
+.volume-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+#volume-bar {
+    width: 100%;
+}
+
+.credits {
+    text-align: center;
+    margin-top: 15px;
+    color: #fff; /* Cor do texto */
+}
+
+.credits a {
+    color: #1db954; /* Cor dos links */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.credits a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script> 
+</head>
+<body>
+
+    <div class="player">
+        <h2 id="music-name">Nome da Música</h2>
+        
+        <img id="cover" src="img/cover.jpg" alt="Capa da Música">
+
+
+
+
+        <div class="controls">
+            <button id="prev"><i class="fa-solid fa-backward-step"></i></button>
+            <button id="play"><i class="fa-solid fa-play"></i></button>
+            <button id="next"><i class="fa-solid fa-forward-step"></i></button>
+        </div>
+
+        <div class="progress-container">
+            <span id="current-time">0:00</span>
+            <input type="range" id="progress-bar" min="0" value="0">
+            <span id="duration">0:00</span>
+        </div>
+
+        <audio id="audio" src="musica.mp3"></audio>
+
+        <div class="volume-container">
+            <span id="volume-level">100%</span>
+            <input type="range" id="volume-bar" min="0" max="1" step="0.01" value="1">
+        </div>
+
+        <div class="credits">
+            <p>Produced by Rafael Feitosa</p>
+            <p>
+                <a href="https://www.instagram.com/rafaelfeitosax" target="_blank">Instagram</a> | 
+                <a href="https://github.com/rafaelfeitosax" target="_blank">GitHub</a>
+            </p>
+        </div>
+        
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
